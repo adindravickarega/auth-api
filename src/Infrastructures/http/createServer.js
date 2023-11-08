@@ -27,7 +27,7 @@ const createServer = async (container) => {
     handler: () => ({
       value: 'Hello world!',
     }),
-  });
+  });//cobalagi
   
   server.ext('onPreResponse', (request, h) => {
     // mendapatkan konteks response dari request
