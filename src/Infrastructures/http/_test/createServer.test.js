@@ -38,7 +38,7 @@ describe('HTTP server', () => {
         method: 'GET',
         url: '/',
       });
-      // Assert
+      //Assert
       const responseJson = JSON.parse(response.payload);
       expect(response.statusCode).toEqual(200);
       expect(responseJson.value).toEqual('Hello world!');
